@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
+
     *{
       margin:0;
       padding:0;
@@ -162,7 +163,7 @@
       margin-bottom:15px;
     }
 
-    /* SECTION */
+    /* SECTIONS */
 
     section{
       padding:100px 0;
@@ -286,6 +287,28 @@
       border:1px solid #ddd;
     }
 
+    .project-links{
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap;
+      margin-top:25px;
+    }
+
+    .project-links a{
+      padding:12px 18px;
+      border:1px solid #dcdcdc;
+      border-radius:12px;
+      font-size:0.95rem;
+      font-weight:500;
+      transition:0.25s ease;
+      background:white;
+    }
+
+    .project-links a:hover{
+      border-color:#111;
+      transform:translateY(-2px);
+    }
+
     /* EDUCATION */
 
     .education-grid{
@@ -396,6 +419,7 @@
         text-align:center;
       }
     }
+
   </style>
 </head>
 
@@ -423,6 +447,7 @@
   <!-- HERO -->
 
   <section class="hero">
+
     <div class="container hero-grid">
 
       <div>
@@ -439,6 +464,7 @@
         </p>
 
         <div class="hero-buttons">
+
           <a href="#contact" class="btn btn-dark">
             Contact Me
           </a>
@@ -446,6 +472,7 @@
           <a href="https://nexaai.me" target="_blank" class="btn btn-light">
             View Portfolio
           </a>
+
         </div>
 
       </div>
@@ -464,6 +491,7 @@
       </div>
 
     </div>
+
   </section>
 
   <!-- ABOUT -->
@@ -600,15 +628,20 @@
 
       <div class="timeline">
 
+        <!-- VOICERA -->
+
         <div class="timeline-item">
 
-          <h3>Voicera – Voice-First AI Assistant</h3>
+          <h3>
+            Voicera – Voice-First AI Assistant
+          </h3>
 
           <div class="meta">
             Accessible AI Platform
           </div>
 
           <ul>
+
             <li>
               Built a voice-first AI assistant using
               LangGraph-based multi-agent architecture
@@ -630,9 +663,8 @@
               Developed the platform using React,
               TypeScript, FastAPI, Go, and Supabase.
             </li>
-          </ul>
 
-          <!-- VIDEO DEMO -->
+          </ul>
 
           <div class="project-media">
 
@@ -643,11 +675,23 @@
 
           </div>
 
+          <div class="project-links">
+
+            <a href="https://github.com/kawtharrS/voicera-ai.git" target="_blank">
+              View GitHub Repository
+            </a>
+
+          </div>
+
         </div>
+
+        <!-- RETENTION SYSTEM -->
 
         <div class="timeline-item">
 
-          <h3>Student Retention Prediction System</h3>
+          <h3>
+            Student Retention Prediction System
+          </h3>
 
           <div class="meta">
             Al Maaref University — IT Department |
@@ -655,6 +699,7 @@
           </div>
 
           <ul>
+
             <li>
               Engineered a scalable FastAPI backend
               serving ML model predictions.
@@ -669,13 +714,18 @@
               Collaborated with academic staff on
               data-driven intervention workflows.
             </li>
+
           </ul>
 
         </div>
 
+        <!-- HIREX -->
+
         <div class="timeline-item">
 
-          <h3>Hiring ATS + Interview Copilot</h3>
+          <h3>
+            Hiring ATS + Interview Copilot
+          </h3>
 
           <div class="meta">
             SE Factory Group Project —
@@ -683,6 +733,7 @@
           </div>
 
           <ul>
+
             <li>
               Led deployment and infrastructure for
               an AI-powered Applicant Tracking System.
@@ -701,13 +752,30 @@
             <li>
               Managed CI/CD pipelines and integration workflows.
             </li>
+
           </ul>
+
+          <div class="project-links">
+
+            <a href="https://github.com/MoSmeha/HIREX-client.git" target="_blank">
+              Frontend Repository
+            </a>
+
+            <a href="https://github.com/MoSmeha/HIREX-server.git" target="_blank">
+              Backend Repository
+            </a>
+
+          </div>
 
         </div>
 
+        <!-- ML INSTRUCTOR -->
+
         <div class="timeline-item">
 
-          <h3>ML Instructor for School Students</h3>
+          <h3>
+            ML Instructor for School Students
+          </h3>
 
           <div class="meta">
             Al Maaref University — Faculty of Science |
@@ -715,6 +783,7 @@
           </div>
 
           <ul>
+
             <li>
               Taught 100+ students Python,
               Streamlit, and ML fundamentals.
@@ -729,6 +798,7 @@
               Mentored teams building ML-powered
               applications under time constraints.
             </li>
+
           </ul>
 
         </div>
@@ -753,7 +823,9 @@
 
         <div class="education-card">
 
-          <h3>Bachelor Degree in Computer Science</h3>
+          <h3>
+            Bachelor Degree in Computer Science
+          </h3>
 
           <p>Al Maaref University</p>
           <p>2022 — 2025</p>
@@ -762,7 +834,9 @@
 
         <div class="education-card">
 
-          <h3>FSE Bootcamp</h3>
+          <h3>
+            FSE Bootcamp
+          </h3>
 
           <p>SE Factory</p>
           <p>Nov 2025 — Jan 2026</p>
@@ -771,7 +845,9 @@
 
         <div class="education-card">
 
-          <h3>Activities</h3>
+          <h3>
+            Activities
+          </h3>
 
           <p>• Social Media Admin — Code It Club</p>
           <p>• Teacher Assistant in Java Labs</p>
@@ -849,6 +925,8 @@
     </div>
 
   </section>
+
+  <!-- FOOTER -->
 
   <footer>
     © 2026 Kawthar Shaalan — Junior AI Engineer
