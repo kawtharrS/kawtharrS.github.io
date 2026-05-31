@@ -1,14 +1,16 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kawthar Shaalan | Junior AI Engineer</title>
+  <title>Kawthar Shaalan | AI Engineer</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
+
     *{
       margin:0;
       padding:0;
@@ -31,6 +33,11 @@
       color:inherit;
     }
 
+    img{
+      max-width:100%;
+      display:block;
+    }
+
     .container{
       width:90%;
       max-width:1200px;
@@ -42,9 +49,9 @@
     nav{
       position:sticky;
       top:0;
-      background:rgba(255,255,255,0.95);
+      background:rgba(255,255,255,0.92);
       backdrop-filter:blur(10px);
-      border-bottom:1px solid #e5e5e5;
+      border-bottom:1px solid #e7e7e7;
       z-index:1000;
     }
 
@@ -63,13 +70,13 @@
 
     .nav-links{
       display:flex;
-      gap:30px;
+      gap:28px;
     }
 
     .nav-links a{
-      font-size:0.95rem;
       color:#555;
       transition:0.2s ease;
+      font-size:0.95rem;
     }
 
     .nav-links a:hover{
@@ -79,7 +86,7 @@
     /* HERO */
 
     .hero{
-      min-height:90vh;
+      min-height:95vh;
       display:flex;
       align-items:center;
       background:#fff;
@@ -88,24 +95,25 @@
     .hero-grid{
       display:grid;
       grid-template-columns:1.2fr 0.8fr;
-      gap:60px;
+      gap:70px;
       align-items:center;
     }
 
     .hero h1{
-      font-size:4.2rem;
-      line-height:1.1;
-      margin-bottom:20px;
-      letter-spacing:-2px;
+      font-size:4.4rem;
+      line-height:1.05;
+      margin-bottom:24px;
+      letter-spacing:-3px;
+      font-weight:800;
     }
 
     .hero h1 span{
-      color:#555;
-      font-weight:400;
+      color:#666;
+      font-weight:500;
     }
 
     .hero p{
-      font-size:1.1rem;
+      font-size:1.08rem;
       color:#555;
       max-width:700px;
       margin-bottom:35px;
@@ -113,13 +121,13 @@
 
     .hero-buttons{
       display:flex;
-      gap:15px;
+      gap:16px;
       flex-wrap:wrap;
     }
 
     .btn{
       padding:14px 28px;
-      border-radius:12px;
+      border-radius:14px;
       font-weight:600;
       transition:0.25s ease;
       display:inline-block;
@@ -131,14 +139,13 @@
     }
 
     .btn-dark:hover{
-      background:#000;
       transform:translateY(-2px);
+      background:#000;
     }
 
     .btn-light{
-      border:1px solid #ccc;
-      color:#111;
       background:white;
+      border:1px solid #ddd;
     }
 
     .btn-light:hover{
@@ -148,28 +155,28 @@
     .hero-card{
       background:#111;
       color:white;
-      padding:40px;
-      border-radius:24px;
+      padding:45px;
+      border-radius:28px;
     }
 
     .hero-card h3{
       font-size:1.5rem;
-      margin-bottom:20px;
+      margin-bottom:24px;
     }
 
     .hero-card p{
-      color:#ddd;
-      margin-bottom:15px;
+      color:#d6d6d6;
+      margin-bottom:16px;
     }
 
-    /* SECTION */
+    /* GENERAL */
 
     section{
       padding:100px 0;
     }
 
     .section-title{
-      font-size:2.3rem;
+      font-size:2.5rem;
       margin-bottom:50px;
       letter-spacing:-1px;
     }
@@ -183,18 +190,18 @@
     .about-content{
       display:grid;
       grid-template-columns:1fr 1fr;
-      gap:60px;
+      gap:30px;
     }
 
     .about-box{
       background:white;
-      padding:35px;
-      border-radius:20px;
-      border:1px solid #eaeaea;
+      padding:38px;
+      border-radius:22px;
+      border:1px solid #ececec;
     }
 
     .about-box h3{
-      margin-bottom:20px;
+      margin-bottom:18px;
       font-size:1.2rem;
     }
 
@@ -207,14 +214,14 @@
     .skills-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:20px;
+      gap:22px;
     }
 
     .skill-card{
       background:white;
-      padding:30px;
-      border-radius:18px;
-      border:1px solid #e8e8e8;
+      padding:32px;
+      border-radius:20px;
+      border:1px solid #e9e9e9;
       transition:0.25s ease;
     }
 
@@ -224,7 +231,7 @@
     }
 
     .skill-card h3{
-      margin-bottom:18px;
+      margin-bottom:20px;
       font-size:1.1rem;
     }
 
@@ -237,7 +244,7 @@
       color:#555;
     }
 
-    /* EXPERIENCE */
+    /* PROJECTS */
 
     .experience{
       background:#fff;
@@ -246,34 +253,72 @@
     .timeline{
       display:flex;
       flex-direction:column;
-      gap:25px;
+      gap:30px;
     }
 
     .timeline-item{
       background:#fafafa;
       padding:35px;
+      border-radius:24px;
+      border:1px solid #ececec;
+      transition:0.25s ease;
+    }
+
+    .timeline-item:hover{
+      transform:translateY(-5px);
+      border-color:#d9d9d9;
+    }
+
+    .timeline-item img{
+      width:100%;
       border-radius:18px;
-      border:1px solid #eee;
+      margin-bottom:25px;
+      border:1px solid #e5e5e5;
+      transition:0.3s ease;
+    }
+
+    .timeline-item img:hover{
+      transform:scale(1.01);
     }
 
     .timeline-item h3{
-      font-size:1.2rem;
-      margin-bottom:5px;
+      font-size:1.35rem;
+      margin-bottom:8px;
     }
 
-    .timeline-item .meta{
+    .meta{
       color:#666;
       font-size:0.95rem;
       margin-bottom:20px;
     }
 
+    .timeline-item p{
+      color:#555;
+      margin-bottom:20px;
+    }
+
     .timeline-item ul{
-      padding-left:18px;
+      padding-left:20px;
       color:#444;
     }
 
     .timeline-item li{
-      margin-bottom:10px;
+      margin-bottom:12px;
+    }
+
+    .tech-stack{
+      margin-top:25px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+    }
+
+    .tech-stack span{
+      padding:8px 14px;
+      background:#111;
+      color:white;
+      border-radius:999px;
+      font-size:0.9rem;
     }
 
     /* EDUCATION */
@@ -281,22 +326,23 @@
     .education-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-      gap:20px;
+      gap:22px;
     }
 
     .education-card{
       background:white;
-      padding:30px;
-      border-radius:18px;
-      border:1px solid #eaeaea;
+      padding:32px;
+      border-radius:20px;
+      border:1px solid #ececec;
     }
 
     .education-card h3{
-      margin-bottom:10px;
+      margin-bottom:12px;
     }
 
     .education-card p{
       color:#555;
+      margin-bottom:8px;
     }
 
     /* CONTACT */
@@ -308,7 +354,7 @@
     }
 
     .contact p{
-      color:#ccc;
+      color:#d0d0d0;
       max-width:700px;
       margin:0 auto 35px;
     }
@@ -316,28 +362,28 @@
     .contact-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
+      gap:22px;
       margin-top:50px;
     }
 
     .contact-card{
-      background:#1c1c1c;
-      padding:30px;
-      border-radius:18px;
-      border:1px solid #2b2b2b;
+      background:#1b1b1b;
+      padding:32px;
+      border-radius:20px;
+      border:1px solid #2a2a2a;
     }
 
     .contact-card h4{
-      margin-bottom:10px;
+      margin-bottom:12px;
     }
 
     .contact-card a{
-      color:#d6d6d6;
+      color:#d7d7d7;
       word-break:break-word;
     }
 
     footer{
-      background:#0b0b0b;
+      background:#090909;
       color:#777;
       text-align:center;
       padding:25px;
@@ -356,10 +402,6 @@
       .hero h1{
         font-size:3rem;
       }
-
-      .nav-links{
-        gap:15px;
-      }
     }
 
     @media(max-width:600px){
@@ -369,7 +411,7 @@
       }
 
       .section-title{
-        font-size:1.9rem;
+        font-size:2rem;
       }
 
       .nav-content{
@@ -396,174 +438,228 @@
 
   <nav>
     <div class="container nav-content">
-      <div class="logo">Kawthar Shaalan</div>
+
+      <div class="logo">
+        Kawthar Shaalan
+      </div>
 
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
+        <a href="#experience">Projects</a>
         <a href="#contact">Contact</a>
       </div>
+
     </div>
   </nav>
 
   <!-- HERO -->
 
   <section class="hero">
+
     <div class="container hero-grid">
 
       <div>
+
         <h1>
-          Junior <span>AI Engineer</span>
+          Building <span>AI Systems</span><br>
+          for Real-World Impact
         </h1>
 
         <p>
-          Dedicated software engineer passionate about AI systems, intelligent automation,
-          and scalable software architecture. I build practical AI-powered applications
-          using LangChain, LangGraph, FastAPI, React, and modern backend technologies.
+          AI Engineer focused on multi-agent systems, voice AI, intelligent automation,
+          and scalable backend architectures using LangGraph, FastAPI, React,
+          and modern AI tooling.
         </p>
 
         <div class="hero-buttons">
-          <a href="#contact" class="btn btn-dark">Contact Me</a>
+
+          <a href="#contact" class="btn btn-dark">
+            Contact Me
+          </a>
+
+          <a href="https://nexaai.me" target="_blank" class="btn btn-light">
+            View Portfolio
+          </a>
+
         </div>
+
       </div>
 
       <div class="hero-card">
-        <h3>Currently Focused On</h3>
 
-        <p>• Agentic AI Systems</p>
-        <p>• LangGraph Multi-Agent Architectures</p>
+        <h3>Core Focus Areas</h3>
+
+        <p>• Multi-Agent AI Systems</p>
+        <p>• Voice AI & Accessibility</p>
         <p>• RAG & Vector Databases</p>
-        <p>• FastAPI Backend Development</p>
-        <p>• AI Automation with n8n</p>
-        <p>• Scalable AI Applications</p>
+        <p>• FastAPI Backend Engineering</p>
+        <p>• AI Automation Workflows</p>
+        <p>• Scalable Software Architecture</p>
+
       </div>
 
     </div>
+
   </section>
 
   <!-- ABOUT -->
 
   <section class="about" id="about">
+
     <div class="container">
 
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title">
+        About Me
+      </h2>
 
       <div class="about-content">
 
         <div class="about-box">
+
           <h3>Who I Am</h3>
 
           <p>
-            I’m a Junior AI Engineer based in Beirut, Lebanon, focused on building
-            intelligent systems that solve real-world problems. My work combines
-            software engineering principles with modern AI technologies to create
-            maintainable and scalable applications.
+            I specialize in building AI-powered systems involving multi-agent orchestration,
+            voice interfaces, retrieval-augmented generation (RAG), and backend APIs.
+            My recent work focuses heavily on accessibility and intelligent automation systems.
           </p>
+
         </div>
 
         <div class="about-box">
+
           <h3>What I Enjoy Building</h3>
 
           <p>
-            I enjoy building AI assistants, multi-agent systems, backend architectures,
-            automation pipelines, and full-stack applications. I’m especially interested
-            in systems that improve accessibility, productivity, and user experience.
+            I enjoy building AI assistants, backend architectures, automation pipelines,
+            and full-stack applications that improve accessibility, productivity,
+            and user experience through modern AI technologies.
           </p>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
   <!-- SKILLS -->
 
   <section id="skills">
+
     <div class="container">
 
-      <h2 class="section-title">Skills & Technologies</h2>
+      <h2 class="section-title">
+        Skills & Technologies
+      </h2>
 
       <div class="skills-grid">
 
         <div class="skill-card">
-          <h3>AI & Automation</h3>
+
+          <h3>AI Engineering</h3>
 
           <ul>
             <li>LangChain</li>
             <li>LangGraph</li>
             <li>RAG Systems</li>
-            <li>n8n Automation</li>
-            <li>Pydantic</li>
+            <li>Vector Databases</li>
             <li>Machine Learning</li>
+            <li>n8n Automation</li>
           </ul>
+
         </div>
 
         <div class="skill-card">
-          <h3>Backend & APIs</h3>
+
+          <h3>Backend Development</h3>
 
           <ul>
             <li>Python</li>
             <li>FastAPI</li>
-            <li>Go</li>
-            <li>PHP & Laravel</li>
             <li>REST APIs</li>
+            <li>Go</li>
             <li>MySQL</li>
+            <li>Supabase</li>
           </ul>
+
         </div>
 
         <div class="skill-card">
+
           <h3>Frontend Development</h3>
 
           <ul>
             <li>React</li>
-            <li>JavaScript</li>
             <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
             <li>Streamlit</li>
-            <li>Responsive UI Design</li>
           </ul>
+
         </div>
 
         <div class="skill-card">
+
           <h3>Software Engineering</h3>
 
           <ul>
             <li>Scalable Architecture</li>
-            <li>Design Patterns</li>
-            <li>Problem Solving</li>
             <li>CI/CD</li>
             <li>AWS EC2 Deployment</li>
+            <li>Problem Solving</li>
+            <li>System Design</li>
           </ul>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
-  <!-- EXPERIENCE -->
+  <!-- PROJECTS -->
 
   <section class="experience" id="experience">
+
     <div class="container">
 
-      <h2 class="section-title">Technical Experience</h2>
+      <h2 class="section-title">
+        Featured Projects
+      </h2>
 
       <div class="timeline">
 
+        <!-- VOICERA -->
+
         <div class="timeline-item">
-          <h3>Voicera – Voice-First AI Assistant</h3>
+
+          <img src="voicera.png" alt="Voicera AI Assistant">
+
+          <h3>
+            Voicera — Multi-Agent Voice AI Assistant
+          </h3>
 
           <div class="meta">
-            Accessible AI Platform
+            Accessibility-Focused AI Platform
           </div>
 
+          <p>
+            AI-powered voice assistant designed to improve accessibility for visually impaired users
+            through intelligent agent orchestration and voice-first interaction systems.
+          </p>
+
           <ul>
+
             <li>
-              Built a voice-first AI assistant using LangGraph-based multi-agent architecture
-              for intelligent task routing.
+              Built LangGraph-based multi-agent architecture for intelligent task routing.
             </li>
 
             <li>
-              Integrated speech-to-text and intent classification for routing commands
-              to specialized AI agents.
+              Integrated speech-to-text pipelines and intent classification systems.
             </li>
 
             <li>
@@ -571,21 +667,98 @@
             </li>
 
             <li>
-              Developed the platform using React, TypeScript, FastAPI, Go, and Supabase.
+              Developed scalable backend APIs using FastAPI and Go.
             </li>
+
+            <li>
+              Built responsive frontend interfaces using React and TypeScript.
+            </li>
+
           </ul>
+
+          <div class="tech-stack">
+
+            <span>LangGraph</span>
+            <span>FastAPI</span>
+            <span>React</span>
+            <span>Whisper</span>
+            <span>Supabase</span>
+
+          </div>
+
         </div>
 
+        <!-- PDF ANALYSIS -->
+
         <div class="timeline-item">
-          <h3>Student Retention Prediction System</h3>
+
+          <img src="pdf_analysis.png" alt="PDF Analysis System">
+
+          <h3>
+            AI PDF Analysis System
+          </h3>
 
           <div class="meta">
-            Al Maaref University — IT Department | July 2025 – Sept 2025
+            Document Intelligence & RAG Platform
+          </div>
+
+          <p>
+            Intelligent PDF analysis platform capable of extracting, understanding,
+            and querying large documents using retrieval-augmented generation pipelines.
+          </p>
+
+          <ul>
+
+            <li>
+              Built document ingestion pipelines for PDF parsing and text extraction.
+            </li>
+
+            <li>
+              Implemented semantic document search using vector embeddings.
+            </li>
+
+            <li>
+              Developed conversational querying system over uploaded documents.
+            </li>
+
+            <li>
+              Engineered scalable FastAPI backend architecture for AI processing.
+            </li>
+
+            <li>
+              Designed clean frontend interfaces for document interaction workflows.
+            </li>
+
+          </ul>
+
+          <div class="tech-stack">
+
+            <span>RAG</span>
+            <span>LangChain</span>
+            <span>FastAPI</span>
+            <span>Vector DB</span>
+            <span>Python</span>
+
+          </div>
+
+        </div>
+
+        <!-- RETENTION -->
+
+        <div class="timeline-item">
+
+          <h3>
+            Student Retention Prediction System
+          </h3>
+
+          <div class="meta">
+            Al Maaref University — IT Department
           </div>
 
           <ul>
+
             <li>
-              Engineered a scalable FastAPI backend serving ML model predictions.
+              Engineered scalable FastAPI backend serving ML model predictions.
             </li>
 
             <li>
@@ -595,19 +768,31 @@
             <li>
               Collaborated with academic staff on data-driven intervention workflows.
             </li>
+
+            <li>
+              Designed APIs for real-time prediction delivery and analytics integration.
+            </li>
+
           </ul>
+
         </div>
 
+        <!-- ATS -->
+
         <div class="timeline-item">
-          <h3>Hiring ATS + Interview Copilot</h3>
+
+          <h3>
+            Hiring ATS + Interview Copilot
+          </h3>
 
           <div class="meta">
-            SE Factory Group Project — Best Group Project Award | DevOps Lead
+            SE Factory Group Project — Best Group Project Award
           </div>
 
           <ul>
+
             <li>
-              Led deployment and infrastructure for an AI-powered Applicant Tracking System.
+              Led infrastructure deployment for an AI-powered Applicant Tracking System.
             </li>
 
             <li>
@@ -615,125 +800,174 @@
             </li>
 
             <li>
-              Designed n8n workflow automation reducing recruiter manual actions.
+              Designed automation workflows using n8n reducing recruiter manual tasks.
             </li>
 
             <li>
-              Managed CI/CD pipelines and integration workflows.
+              Managed CI/CD pipelines and deployment environments.
             </li>
+
           </ul>
+
         </div>
 
+        <!-- INSTRUCTOR -->
+
         <div class="timeline-item">
-          <h3>ML Instructor for School Students</h3>
+
+          <h3>
+            Machine Learning Instructor
+          </h3>
 
           <div class="meta">
-            Al Maaref University — Faculty of Science | Dec 2025 – Jan 2026
+            Al Maaref University — Faculty of Science
           </div>
 
           <ul>
+
             <li>
-              Taught 100+ students Python, Streamlit, and ML fundamentals.
+              Taught Python, Streamlit, and machine learning fundamentals to 100+ students.
             </li>
 
             <li>
-              Designed hands-on machine learning curriculum and workshops.
+              Designed practical workshops and project-based ML learning experiences.
             </li>
 
             <li>
-              Mentored teams building ML-powered applications under time constraints.
+              Mentored student teams building AI-powered applications.
             </li>
+
           </ul>
+
         </div>
 
       </div>
+
     </div>
+
   </section>
 
   <!-- EDUCATION -->
 
   <section>
+
     <div class="container">
 
-      <h2 class="section-title">Education & Activities</h2>
+      <h2 class="section-title">
+        Education & Activities
+      </h2>
 
       <div class="education-grid">
 
         <div class="education-card">
-          <h3>Bachelor Degree in Computer Science</h3>
+
+          <h3>
+            Bachelor Degree in Computer Science
+          </h3>
+
           <p>Al Maaref University</p>
           <p>2022 — 2025</p>
+
         </div>
 
         <div class="education-card">
-          <h3>FSE Bootcamp</h3>
+
+          <h3>
+            FSE Bootcamp
+          </h3>
+
           <p>SE Factory</p>
           <p>Nov 2025 — Jan 2026</p>
+
         </div>
 
         <div class="education-card">
-          <h3>Activities</h3>
 
-          <p>• Social Media Admin — Code It Club</p>
+          <h3>
+            Highlights
+          </h3>
+
+          <p>• Best Group Project Award — SE Factory</p>
+          <p>• ML Instructor for 100+ Students</p>
           <p>• Teacher Assistant in Java Labs</p>
-          <p>• Work Study Program — Student Affairs</p>
+          <p>• Social Media Admin — Code It Club</p>
+
         </div>
 
       </div>
 
     </div>
+
   </section>
 
   <!-- CONTACT -->
 
   <section class="contact" id="contact">
+
     <div class="container">
 
-      <h2 class="section-title">Let’s Work Together</h2>
+      <h2 class="section-title">
+        Open to AI Engineering Opportunities
+      </h2>
 
       <p>
-        I’m actively growing as an AI engineer and always excited to work on impactful
-        projects involving AI systems, backend engineering, automation, and intelligent applications.
+        Interested in AI engineering internships, backend development roles,
+        and opportunities involving intelligent systems, automation,
+        and scalable software engineering.
       </p>
 
       <div class="contact-grid">
 
         <div class="contact-card">
+
           <h4>Email</h4>
+
           <a href="mailto:kwthrrshlnn@gmail.com">
             kwthrrshlnn@gmail.com
           </a>
+
         </div>
 
         <div class="contact-card">
+
           <h4>Phone</h4>
+
           <a href="tel:+96181045597">
             +961 81 045 597
           </a>
+
         </div>
 
         <div class="contact-card">
+
           <h4>GitHub</h4>
+
           <a href="https://github.com/kawtharrS" target="_blank">
             github.com/kawtharrS
           </a>
+
         </div>
 
         <div class="contact-card">
+
           <h4>LinkedIn</h4>
+
           <a href="https://linkedin.com/in/kawthar-shaalan-dev" target="_blank">
             linkedin.com/in/kawthar-shaalan-dev
           </a>
+
         </div>
 
       </div>
 
     </div>
+
   </section>
 
   <footer>
-    © 2026 Kawthar Shaalan — Junior AI Engineer
+    © 2026 Kawthar Shaalan — AI Engineer
   </footer>
 
 </body>
 </html>
+```
